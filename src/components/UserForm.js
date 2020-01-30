@@ -12,7 +12,7 @@ margin-bottom: -15px;
 width 33vw;
 margin 0 auto;
 padding: 15px 0;
-border-bottom: 2px groove #00008B;
+border-bottom: 2px groove black;
 `
 
 const FormWarp = styled.div`
@@ -47,7 +47,7 @@ align-items:center;
 `
 
 const BorderWrap = styled.div`
-border: 2px groove 	#00008B;
+border: 2px groove 	black;
 width: 33vw;
 margin: 0 auto;
 padding-bottom: 32px;

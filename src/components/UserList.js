@@ -7,7 +7,7 @@ const UserBox = styled.div`
     width: 100%;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content:center;
     align-items: stretch;
     align-content: center;
     margin: 20px;

@@ -3,14 +3,15 @@ import styled from 'styled-components';
 
 
 const StyledCard = styled.div`
-    width: 32vw;
+    width: 20vw;
     max-height: 32vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 1rem;
+    margin: 15px 32px;
     border-radius: 4px;
-    padding: 10px;
+    padding-bottom: 15px;
+    border: 2px dashed #1E90FF;
 `
 
 const UserCard = ({ user, customColor }) => {
