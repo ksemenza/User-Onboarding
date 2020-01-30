@@ -54,7 +54,7 @@ padding-bottom: 32px;
 `
 
 
-const UserForm = ({ values, errors, touched, status }) => {
+const UserForm = ({ values, errors, touched, status, resetForm }) => {
 
 
     const [users, setUsers] = useState([]);
@@ -145,12 +145,16 @@ const FormikUserForm = withFormik({
     /* 
    Post request endpoint: https://reqres.in/api/users */
 
-    handleSubmit(values, { setStatus }) {
+    handleSubmit(values, { setStatus, resetForm }) {
         axios.post('https://reqres.in/api/users', values)
             .then(res => {
                 console.log(res);
                 setStatus(res.data);
+
+                resetForm();
             })
+
+       
             .catch(err => console.log(err.response));
     }
 })(UserForm);
